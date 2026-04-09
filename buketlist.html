@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>우리 조 버킷리스트 아트 월</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* [뼈대 코드 스타일] */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Nanum Pen Script', cursive;
+            background-color: #d4b895;
+            background-image: url('https://www.transparenttextures.com/patterns/cork-board.png');
+            background-attachment: fixed;
+            text-align: center;
+            padding-bottom: 100px;
+        }
+        header {
+            margin: 60px auto 40px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            display: inline-block;
+            padding: 20px 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+        }
+        h1 { color: #333; font-size: 2.8rem; margin-bottom: 10px; }
+        .clearfix::after { content: ""; display: block; clear: both; }
+        .gallery-container { 
+            width: 95%; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+        }
+
+        /* [카드 공통 스타일 관리] */
+        .card {
+            width: 320px;
+            margin: 20px;
+            padding: 15px 15px 35px 15px;
+            border-radius: 2px 2px 15px 5px;
+            box-shadow: 3px 5px 15px rgba(0,0,0,0.15);
+            position: relative;
+            transition: all 0.3s ease;
+            text-align: left; /* 카드 내 텍스트 정렬 */
+        }
+        .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; margin-bottom: 15px; }
+        
+        /* 마우스 호버 효과 */
+        .card:hover {
+            transform: scale(1.05) rotate(0deg) !important;
+            z-index: 10;
+        }
+        .card:hover .secret-memo {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* [팀원 1: 안성헌님 스타일] */
+        .card-seongheon {
+            background: linear-gradient(135deg, #f0f9ff 0%, #d9f8ff 100%);
+            transform: rotate(-2deg);
+        }
+        .card-seongheon .badge {
+            position: absolute; top: -10px; right: 10px;
+            background-color: gold; font-weight: bold;
+            padding: 5px 15px; border-radius: 15px; font-size: 0.9rem;
+        }
+        .card-seongheon .secret-memo { visibility: hidden; color: #666; font-size: 1.1rem; margin-top: 10px; }
+
+        /* [팀원 2: 율찬님 스타일] */
+        .card-yulchan {
+            background: linear-gradient(135deg, #c2f8fb 0%, #a9f0de 100%);
+            transform: rotate(1.5deg);
+            font-family: 'Noto Sans KR', sans-serif;
+            border-radius: 2px 2px 40px 2px;
+        }
+        .card-yulchan h2 { font-family: 'Nanum Pen Script', cursive; font-size: 2.2rem; }
+        .card-yulchan .badge {
+            position: absolute; top: 15px; right: -10px;
+            background-color: #2d3436; color: #fff;
+            padding: 5px 12px; font-size: 0.75rem; font-weight: 700;
+            transform: rotate(10deg); z-index: 5;
+        }
+        .card-yulchan .secret-memo { 
+            position: absolute; bottom: 15px; right: 20px;
+            font-family: 'Nanum Pen Script', cursive; font-size: 1.3rem;
+            color: #451860; visibility: hidden; opacity: 0;
+        }
+
+        /* [팀원 3: 김한님 스타일] */
+        .card-han {
+            background: linear-gradient(135deg, #fffcf0 0%, #fff3b0 100%);
+            transform: rotate(-1deg);
+        }
+        .card-han .badge {
+            position: absolute; top: -10px; right: -10px;
+            background: #ff6b6b; color: white;
+            padding: 6px 12px; border-radius: 20px; font-size: 0.85rem;
+        }
+        .card-han .secret-memo {
+            margin-top: 15px; padding: 10px;
+            background: #ffeaa7; border-left: 4px solid #fdcb6e;
+            border-radius: 5px; font-size: 1rem; color: #636e72;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🏖️ 2026 버킷리스트 아트 월 🏖️</h1>
+        <p style="font-size: 1.5rem; color: #555;">우리 조의 꿈들을 코르크 보드에 붙였습니다!</p>
+    </header>
+
+    <main class="gallery-container clearfix">
+        
+        <div class="card card-seongheon">
+            <div class="badge">Hot🔥</div>
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=400" alt="헬스장">
+            <h2>✨ 안성헌의 꿈</h2>
+            <p>💪 1. 운동해서 체력 키우기</p>
+            <p>🚗 2. 운전 면허 도전하기</p>
+            <div class="secret-memo">🤫 TMI: 귀차니즘 엄청 심함</div>
+        </div>
+
+        <div class="card card-yulchan">
+            <div class="badge">Romance</div>
+            <img src="https://i.pinimg.com/1200x/52/4f/d4/524fd4ff7d4ec0becb1041a0d8076ce7.jpg" alt="바다 풍경">
+            <h2>✨Yulchan's BucketList</h2>
+            <p>🎮 1. 인디 게임 제작하기 </p>
+            <p>🎨 2. 한 권의 노트 그림 채우기</p>
+            <p>🎸 3. 밴드 결성해서 연주하기</p>
+            <p>🎒 4. 혼자서 배낭 여행 가보기</p>
+            <div class="secret-memo">🤫 사실 겁이 많아서 혼자 여행가기 두려움</div>
+        </div>
+
+        <div class="card card-han">
+            <span class="badge">Hot 🔥</span>
+            <img src="https://www.agoda.com/wp-content/uploads/2024/02/Featured-image-Aurora-Borealis-in-Iceland.jpg" alt="오로라 풍경">
+            <h2>✨ 김한의 2026 버킷리스트</h2>
+            <p>🏢 1. 내 회사 만들기 <strong>기획 중</strong></p>
+            <p>🎸 2. 기타 배우기 <strong>D-267 ⏳</strong></p>
+            <p>🌌 3. 오로라 보기</p>
+            <div class="secret-memo">TMI: 사실 기타는 배우다 포기한 적 있음... 이번엔 진짜다!</div>
+        </div>
+
+    </main>
+
+</body>
+</html>
