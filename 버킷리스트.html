@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html lang="ko"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>내 버킷리스트 카드</title> 
+    <style> 
+        .card { 
+            width: 300px; 
+            margin: 50px auto; 
+            background: linear-gradient(135deg, #fffcf0 0%, #fff3b0 100%); 
+            padding: 15px 15px 35px 15px; 
+            border-radius: 2px 2px 15px 5px; 
+            box-shadow: 3px 5px 15px rgba(0,0,0,0.15); 
+            position: relative; 
+        } 
+        .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; 
+margin-bottom: 15px; } 
+        .card h2 { color: #2c3e50; font-size: 1.5rem; margin-bottom: 10px; } 
+        .card p { color: #444; font-size: 1.1rem; line-height: 1.5; } 
+        .badge { 
+            position: absolute; 
+            top: -10px; 
+            right: -10px; 
+            background: #ff6b6b; 
+            color: white; 
+            padding: 6px 12px; 
+            border-radius: 20px; 
+            font-size: 0.85rem; 
+            font-weight: bold; 
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.2); 
+        } 
+        .secret-memo { 
+            margin-top: 15px; 
+            padding: 10px; 
+            background: #ffeaa7; 
+            border-left: 4px solid #fdcb6e; 
+            border-radius: 5px; 
+            font-size: 0.9rem; 
+            color: #636e72; 
+            visibility: hidden; 
+        } 
+        .card:hover .secret-memo { 
+            visibility: visible; 
+        } 
+    </style> 
+</head> 
+<body> 
+<div class="card"> 
+<span class="badge">Hot 🔥</span> 
+<img src="https://www.agoda.com/wp-content/uploads/2024/02/Featured-image-Aurora-Borealis-in-Iceland.jpg"="오로라 풍경"> 
+<h2>✨ 김한의 2026 버킷리스트</h2> 
+<p>🏢 1. 내 회사 만들기 <strong>📋 기획 중</strong></p> 
+<p>🎸 2. 기타 배우기 <strong>D-267 ⏳</strong></p> 
+<p>🌌 3. 오로라 보기</p>
+<div class="secret-memo"> 
+ 
+  TMI: 사실 기타는 배우다 포기한 적 있음... 이번엔 진짜다! 
+</div> 
+</div> 
+</body> 
+</html>
